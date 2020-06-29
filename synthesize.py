@@ -19,7 +19,7 @@ def prepare_run(args):
 	taco_checkpoint = os.path.join('/content/drive/My Drive/TCC/', 'logs-' + run_name, 'taco_' + args.checkpoint)
 
 	run_name = args.name or args.wavenet_name or args.model
-	wave_checkpoint = os.path.join('logs-' + run_name, 'wave_' + args.checkpoint)
+	wave_checkpoint = os.path.join('/content/drive/My Drive/TCC/', 'logs-' + run_name, 'wave_' + args.checkpoint)
 	return taco_checkpoint, wave_checkpoint, modified_hp
 
 def get_sentences(args):
